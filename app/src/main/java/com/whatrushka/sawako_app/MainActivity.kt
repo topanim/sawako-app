@@ -30,6 +30,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import androidx.navigation.navDeepLink
+import com.whatrushka.sawako_app.app.screens.home.HomeScreen
 import com.whatrushka.sawako_app.ui.theme.SawakoappTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -53,10 +54,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Column {
-                        Text(text = intent.data.toString())
-                        OpenBrowserButton(url = "")
-                    }
+                    HomeScreen()
                 }
             }
         }

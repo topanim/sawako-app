@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Sawakoapp"
         tools:targetApi="31">
 
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -25,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -34,8 +37,11 @@
                 <data android:scheme="sawako" />
                 <data android:scheme="https" />
                 <data android:scheme="http" />
-                <data android:host="bot" />
-                <data android:host="sawakobot" />
+                <data android:host="topanim.github.io"/>
+<!--                <data android:pathPrefix="/sawako-archive"/>-->
+<!--                <data android:host="sawako" />-->
+<!--                <data android:host="bot" />-->
+<!--                <data android:host="sawakobot" />-->
             </intent-filter>
         </activity>
     </application>

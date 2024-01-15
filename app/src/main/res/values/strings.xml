@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">sawako_app</string>
+    <string name="app_name">Sawako</string>
+    <string name="bot_name">Sawako</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://topanim.github.io/.well-known/assetlinks.json\" }]</string>
 </resources>
